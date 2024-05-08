@@ -1,6 +1,6 @@
-package com.vk.intership.products.network
+package com.vk.intership.products.domain.model
 
-import com.vk.intership.products.model.Product
+import com.vk.intership.products.domain.model.Product
 import kotlinx.serialization.Serializable
 
 @Serializable

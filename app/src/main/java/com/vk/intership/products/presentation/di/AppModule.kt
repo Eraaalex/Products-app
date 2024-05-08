@@ -1,6 +1,6 @@
-package com.vk.intership.products.di
+package com.vk.intership.products.presentation.di
 
-import com.vk.intership.products.MainViewModel
+import com.vk.intership.products.presentation.MainViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

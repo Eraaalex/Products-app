@@ -1,15 +1,12 @@
-package com.vk.intership.products
+package com.vk.intership.products.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.vk.intership.products.adapters.ProductAdapter
-import com.vk.intership.products.data.ProductRepository
-import com.vk.intership.products.model.Product
+import com.vk.intership.products.R
+import com.vk.intership.products.presentation.adapters.ProductAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {

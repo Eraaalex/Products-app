@@ -1,12 +1,12 @@
-package com.vk.intership.products
+package com.vk.intership.products.presentation
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.vk.intership.products.data.ProductRepository
-import com.vk.intership.products.model.Product
+import com.vk.intership.products.domain.ProductRepository
+import com.vk.intership.products.domain.model.Product
 import kotlinx.coroutines.launch
 
 

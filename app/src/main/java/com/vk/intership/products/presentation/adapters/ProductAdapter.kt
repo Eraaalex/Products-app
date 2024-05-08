@@ -1,4 +1,4 @@
-package com.vk.intership.products.adapters
+package com.vk.intership.products.presentation.adapters
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.vk.intership.products.R
-import com.vk.intership.products.model.Product
+import com.vk.intership.products.domain.model.Product
 
 class ProductAdapter(private var productList: List<Product>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
@@ -30,10 +30,6 @@ class ProductAdapter(private var productList: List<Product>) : RecyclerView.Adap
         holder.nameTextView.text = product.title
         holder.thumbnailTextView.text = product.thumbnail
         Glide.with(holder.imageView.context).load(product.images[0]).into(holder.imageView)
-
-//        holder.itemView.setOnClickListener {
-//            // Код для запуска новой Activity с деталями товара
-//        }
     }
 
     override fun getItemCount(): Int = productList.size

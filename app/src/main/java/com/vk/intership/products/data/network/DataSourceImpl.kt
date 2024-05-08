@@ -1,4 +1,4 @@
-package com.vk.intership.products.network
+package com.vk.intership.products.data.network
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -21,7 +21,7 @@ class DataSourceImpl : DataSource {
 
         client.newCall(request).execute().use { response ->
             if (!response.isSuccessful) {
-                throw IOException("Unexpected code $response")
+                throw IOException("Unexpected $response")
             }
             response.body?.string() ?: throw IOException("Failed to read response")
         }
